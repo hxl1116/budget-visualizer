@@ -1,8 +1,8 @@
 import yaml
 
 
-def get_budget_data():
-    with open('data.yml') as yml_file:
+def get_budget_data(filename):
+    with open(filename) as yml_file:
         return yaml.safe_load(yml_file)
 
 
